@@ -13,7 +13,7 @@ If the game doesn't work, there are two commons errors that you can fix.
 ## Setup
 
 1. Download python [here](https://www.python.org/downloads/).
-3. Download the [projet](https://github.com/Prince527GitHub/FlappyBirdPython/archive/refs/heads/main.zip) on [github](https://github.com/) then extract it.
+3. Download the [project](https://github.com/Prince527GitHub/FlappyBirdPython/archive/refs/heads/main.zip) on [github](https://github.com/) then extract it.
 4. Open cmd.
 5. Use `cd [directory]` to go to the directory that the game is in.
 6. Do `pip install pygame`.
