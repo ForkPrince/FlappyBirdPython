@@ -6,7 +6,12 @@ Here is Flappy Bird Python version. If the game doesn't work, there are three co
 
 1. Check if there is any syntax error when defining each function. Sometimes, that is the reason why the program doesn't work.
 2. Finally, if nothing is working, try to use a good IDE, like Pycharm or VSC.
-Don't forget to set the max FPS in the last line!
+
+## Options
+You can change the max FPS in the last line of the `flappy.py`!
+```
+clock.tick(120) // Default 120FPS
+```
 
 ## Setup
 
