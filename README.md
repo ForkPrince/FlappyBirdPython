@@ -1,5 +1,7 @@
 # Flappy Bird with Python
 
+### This is a fork of [Flappy Bird with Python](https://github.com/elbaraa534/FlappyBirdPython) by [elbaraa534](https://github.com/elbaraa534) 
+
 Here is Flappy Bird Python version. If the game doesn't work, there are three commons errors that you can fix:
 
 1. Check if there is any syntax error when defining each function. Sometimes, that is the reason why the program doesn't work.
