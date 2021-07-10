@@ -2,10 +2,11 @@
 
 # Flappy Bird with Python
 
-Here is Flappy Bird Python version. If the game doesn't work, there are three commons errors that you can fix:
+Here is Flappy Bird Python version. If the game doesn't work, there are two commons errors that you can fix:
 
 ## Help
-Check if there is any syntax error when defining each function. Sometimes, that is the reason why the program doesn't work.
+1. Check if there is any syntax error when defining each function. Sometimes, that is the reason why the program doesn't work.
+2. Finally, if nothing is working, try to use a good IDE, like Pycharm or VSC.
 
 ## Setup
 
