@@ -91,16 +91,33 @@ game_active = True
 score = 0
 high_score = 0
 can_score = True
-bg_surface = pygame.image.load('assets/background-day.png').convert()
-bg_surface = pygame.transform.scale2x(bg_surface)
+arraytwo = [1, 2]
+numbertwo = random.choice(arraytwo)
+if numbertwo == 1:
+	bg_surface = pygame.image.load('assets/background-day.png').convert()
+	bg_surface = pygame.transform.scale(bg_surface, (576, 1024))
+else:
+	bg_surface = pygame.image.load('assets/background-night.png').convert()
+	bg_surface = pygame.transform.scale(bg_surface, (576, 1024))
 
 floor_surface = pygame.image.load('assets/base.png').convert()
-floor_surface = pygame.transform.scale2x(floor_surface)
+floor_surface = pygame.transform.scale(floor_surface, (672, 224))
 floor_x_pos = 0
 
-bird_downflap = pygame.transform.scale2x(pygame.image.load('assets/bluebird-downflap.png').convert_alpha())
-bird_midflap = pygame.transform.scale2x(pygame.image.load('assets/bluebird-midflap.png').convert_alpha())
-bird_upflap = pygame.transform.scale2x(pygame.image.load('assets/bluebird-upflap.png').convert_alpha())
+arraythird = [1, 2, 3]
+numberthird = random.choice(arraythird)
+if numberthird == 1:
+	bird_downflap = pygame.transform.scale(pygame.image.load('assets/bluebird-downflap.png').convert_alpha(), (68, 48))
+	bird_midflap = pygame.transform.scale(pygame.image.load('assets/bluebird-midflap.png').convert_alpha(), (68, 48))
+	bird_upflap = pygame.transform.scale(pygame.image.load('assets/bluebird-upflap.png').convert_alpha(), (68, 48))
+elif numberthird == 2:
+	bird_downflap = pygame.transform.scale(pygame.image.load('assets/yellowbird-downflap.png').convert_alpha(), (68, 48))
+	bird_midflap = pygame.transform.scale(pygame.image.load('assets/yellowbird-midflap.png').convert_alpha(), (68, 48))
+	bird_upflap = pygame.transform.scale(pygame.image.load('assets/yellowbird-upflap.png').convert_alpha(), (68, 48))
+else:
+	bird_downflap = pygame.transform.scale(pygame.image.load('assets/redbird-downflap.png').convert_alpha(), (68, 48))
+	bird_midflap = pygame.transform.scale(pygame.image.load('assets/redbird-midflap.png').convert_alpha(), (68, 48))
+	bird_upflap = pygame.transform.scale(pygame.image.load('assets/redbird-upflap.png').convert_alpha(), (68, 48))
 bird_frames = [bird_downflap,bird_midflap,bird_upflap]
 bird_index = 0
 bird_surface = bird_frames[bird_index]
@@ -113,14 +130,20 @@ pygame.time.set_timer(BIRDFLAP,200)
 # bird_surface = pygame.transform.scale2x(bird_surface)
 # bird_rect = bird_surface.get_rect(center = (100,512))
 
-pipe_surface = pygame.image.load('assets/pipe-green.png')
-pipe_surface = pygame.transform.scale2x(pipe_surface)
+listpipe = [1, 2]
+numberpipe = random.choice(listpipe)
+if numberpipe == 1:
+	pipe_surface = pygame.image.load('assets/pipe-green.png')
+	pipe_surface = pygame.transform.scale(pipe_surface, (104, 640))
+else:
+	pipe_surface = pygame.image.load('assets/pipe-red.png')
+	pipe_surface = pygame.transform.scale(pipe_surface, (104, 640))
 pipe_list = []
 SPAWNPIPE = pygame.USEREVENT
 pygame.time.set_timer(SPAWNPIPE,1200)
 pipe_height = [400,600,800]
 
-game_over_surface = pygame.transform.scale2x(pygame.image.load('assets/message.png').convert_alpha())
+game_over_surface = pygame.transform.scale(pygame.image.load('assets/message.png').convert_alpha(), (368, 534))
 game_over_rect = game_over_surface.get_rect(center = (288,512))
 
 flap_sound = pygame.mixer.Sound('sound/sfx_wing.wav')
